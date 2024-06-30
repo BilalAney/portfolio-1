@@ -1,0 +1,61 @@
+/** @format */
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  /* background-image: url("./assets/bg.jpeg"); */
+  /* background-size: 2500px; */
+  place-items: center;
+  place-content: center;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 5rem;
+  background: linear-gradient(to left, var(--color-2) 25%, #fff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "NanumGothic";
+  color: #71c532;
+}
+
+@media screen and (width < 900px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (height <750px) and (width < 380px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (height <700px) and (width < 1100px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (width < 810px) {
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "NanumGothic";
+  }
+}
+
+@media screen and (width < 610px) {
+  .logo {
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "NanumGothic";
+  }
+}

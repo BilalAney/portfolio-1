@@ -1,0 +1,28 @@
+/** @format */
+
+.projects {
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 10px;
+  max-height: 20%;
+}
+
+.projectsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 20rem));
+  border: 2px solid var(--color-2);
+  padding: 8px;
+  border-radius: 8px;
+  gap: 10px;
+  overflow-y: auto;
+  height: 38vh;
+}
+
+@media screen and (width < 650px) {
+  .projectsList {
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 16rem));
+  }
+}

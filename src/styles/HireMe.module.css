@@ -1,0 +1,78 @@
+/** @format */
+
+.hireme {
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+.aboveTitle {
+  letter-spacing: 2rem;
+}
+
+.describtion {
+  letter-spacing: 2px;
+  line-height: 25px;
+}
+
+.btnCtn {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+  overflow: visible;
+  background-color: var(--color-3);
+  width: max-content;
+  padding: 8px;
+  border-radius: 7px;
+}
+
+.bottomSection {
+  display: flex;
+  flex-direction: column;
+  place-content: inherit;
+  place-items: inherit;
+  gap: inherit;
+}
+
+.btnCtn button {
+  font: inherit;
+  padding: 10px;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--color-1);
+}
+
+.describtion {
+  text-align: center;
+}
+
+@media screen and (width < 560px) {
+  .aboveTitle {
+    letter-spacing: 1rem;
+  }
+  .subTitle {
+    font-size: 1.2rem;
+  }
+  .describtion {
+    line-height: 20px;
+    letter-spacing: normal;
+    overflow: auto;
+  }
+  .bottomSection {
+    max-height: 45vh;
+    overflow: auto;
+  }
+}
+
+@media screen and (width < 490px) {
+  .btnCtn {
+    flex-direction: column;
+  }
+}

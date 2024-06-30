@@ -1,0 +1,95 @@
+/** @format */
+
+.education {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  place-items: center;
+  padding: 8%;
+  gap: 12px;
+}
+/* 
+.textualPart::before {
+  content: "";
+  position: absolute;
+  border: 4px solid transparent;
+
+  background-clip: "padding-box, border-box";
+  background-origin: "border-box";
+  top: -15%;
+  height: 100%;
+  width: 100%;
+} */
+
+.image {
+  width: 100%;
+}
+
+.textualPart {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.item {
+  border-left: 2px solid var(--color-1);
+  padding: 8px;
+  margin-bottom: 4px;
+}
+
+@media screen and (width < 900px) {
+  .education {
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 1fr;
+    place-items: center;
+  }
+
+  .image {
+    max-height: 10rem;
+  }
+}
+
+@media screen and (width < 515px) {
+  .education {
+    gap: 8px;
+  }
+
+  .item {
+    margin-bottom: 0;
+  }
+
+  .place {
+    font-size: 1.2rem;
+  }
+
+  .describtion {
+    font-size: 0.8rem;
+    /* max-height: 30%; */
+    overflow-y: scroll;
+  }
+
+  .theTitle {
+    text-wrap: nowrap;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (width < 610px) {
+  .education {
+    overflow: auto;
+  }
+  .education .eduTitle {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (width < 335px) {
+  .education .eduTitle {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (width < 610px) and (height <765px) {
+  .textualPart {
+    overflow-y: auto;
+  }
+}

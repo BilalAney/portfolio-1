@@ -1,0 +1,101 @@
+/** @format */
+
+.project {
+  padding: 8px 8px 0px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  position: relative;
+  height: 12%;
+  position: relative;
+  max-width: 20rem;
+  height: 10rem;
+  background-color: var(--color-2);
+  margin: 6px;
+  border-radius: 15px;
+  overflow: visible;
+}
+
+.textualPart {
+  overflow-y: auto;
+  margin-bottom: 2.2rem;
+}
+
+.btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border: none;
+  letter-spacing: 2px;
+  color: #000;
+  font: inherit;
+  height: 2rem;
+  background: linear-gradient(to right, #000 0%, #fff 100%);
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.toturial {
+  position: absolute;
+  transform: rotate(45deg);
+  right: -8%;
+  top: 2%;
+  border: 2px solid var(--color-1);
+  background-color: var(--color-3);
+  padding: 6px;
+  border-radius: 15px;
+  opacity: 0.9;
+}
+
+/*
+@keyframes coloring {
+  0% {
+    background: linear-gradient(to right, #000 0%, #fff 100%);
+    letter-spacing: 2px;
+  }
+  10% {
+    background: linear-gradient(to right, #000 20%, #fff 80%);
+    letter-spacing: 4px;
+  }
+  20% {
+    background: linear-gradient(to right, #000 30%, #fff 70%);
+    letter-spacing: 6px;
+  }
+  30% {
+    background: linear-gradient(to right, #000 40%, #fff 60%);
+    letter-spacing: 8px;
+  }
+  40% {
+    background: linear-gradient(to right, #000 50%, #fff 50%);
+    letter-spacing: 6px;
+  }
+  50% {
+    background: linear-gradient(to right, #000 60%, #fff 40%);
+    letter-spacing: 4px;
+  }
+  60% {
+    background: linear-gradient(to right, #000 70%, #fff 30%);
+    letter-spacing: 2px;
+  }
+  70% {
+    background: linear-gradient(to right, #000 80%, #fff 20%);
+    letter-spacing: 2px;
+  }
+  80% {
+    background: linear-gradient(to right, #000 90%, #fff 10%);
+    letter-spacing: 2px;
+  }
+  90% {
+    background: linear-gradient(to right, #000 100%, #fff 0%);
+    letter-spacing: 2px;
+  }
+  100% {
+    background: transparent;
+    letter-spacing: 2px;
+  }
+} */
