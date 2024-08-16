@@ -4,8 +4,7 @@
 
 ## Software Engineer
 
-This is my portfolio, give me your opinion 💖
+A simple portfolio, built in a hurry. give me your opinion 💖
 
-THE LINK: 
+THE LINK:
 https://portfolio-6f32b.web.app/
-
