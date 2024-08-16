@@ -3,6 +3,9 @@ import styles from "../styles/HireMe.module.css";
 import SmoothInOut from "./SmoothInOut";
 import Title from "./Title";
 import { motion } from "framer-motion";
+import whatsapp from "../assets/WhatsApp.svg";
+import LinkedIn from "../assets/Linedin.svg";
+import X from "../assets/X.svg";
 
 const EMAIL = encodeURIComponent("bilal.al.aney@gmail.com");
 const SUBJECT = encodeURIComponent(
@@ -16,33 +19,62 @@ export default function HireMe() {
     <SmoothInOut className={styles.hireme}>
       <h1 className={styles.aboveTitle}>HIRE ME</h1>
       <Title>BILAL EL-ANEY</Title>
-      <h1 className={styles.subTitle}> I AM PLEASED TO WORK WITH YOU 💻</h1>
+      <h1 className={styles.subTitle}> I AM PLEASED TO WORK WITH YOU </h1>
       <div className={styles.bottomSection}>
         <h4 className={styles.describtion}>
-          Looking for a dedicated and skilled software engineer to bring your
-          project to life? With a strong background in full-stack development
-          and a passion for building robust, scalable applications, I&apos;m
-          here to help. My expertise spans front-end technologies, social media
-          management, and office applications, ensuring a comprehensive approach
-          to your software needs. Let&apos;s collaborate to create innovative
-          solutions that drive your business forward. Contact me today, and
-          let&apos;s turn your ideas into reality! <br />
+          Need a skilled software engineer? I specialize in full-stack
+          development, front-end tech, and scalable apps. Let&apos;s create
+          innovative solutions together. Contact me today!
+          <br />
           CONTACT ME. I AM AVAILABLE ON ALL PLATFORMS
         </h4>
-        <div className={styles.btnCtn}>
-          CONTACT ME &rarr;
-          <button>📞 +964 773 864 5535</button> <p>-OR-</p>
-          <motion.button
-            title=" bilal.al.aney@gmail.com "
-            whileHover={{ scale: 1.2, cursor: "pointer" }}
-            whileTap={{ scale: 0.9, opacity: 0.8 }}
-            transition={{ type: "spring", damping: 2, stiffness: 100 }}
-            onClick={() => {
-              window.location.href = `mailto:${EMAIL}?subject=${SUBJECT}&body=${BODY}`;
-            }}
-          >
-            📧 Email me
-          </motion.button>
+        <div className={styles.contactMeContainer}>
+          <div className={styles.btnCtn}>
+            FIND ME !
+            <div className={styles.socialMedia}>
+              <span
+                className={styles.socialMediaItem}
+                onClick={() =>
+                  (window.location.href = "https://wa.me/07738645535")
+                }
+              >
+                <img src={whatsapp} />
+                +964 773 864 5535
+              </span>
+              <span
+                className={styles.socialMediaItem}
+                onClick={() =>
+                  (window.location.href =
+                    "https://www.linkedin.com/in/bilal-el-aney-166926323?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B6QkGTusYT0Ki31MekWhbPQ%3D%3D")
+                }
+              >
+                <img src={LinkedIn} />
+                Bilal El-Aney
+              </span>
+              <span
+                className={styles.socialMediaItem}
+                onClick={() =>
+                  (window.location.href = "https://x.com/al_aney64258")
+                }
+              >
+                <img src={X} />
+                Bilal El-Aney
+              </span>
+            </div>
+          </div>
+          <div className={styles.btnCtn}>
+            CONTACT ME &rarr;
+            <button>📞 +964 773 864 5535</button> <p>-OR-</p>
+            <button
+              className={styles.socialMediaItem}
+              title=" bilal.al.aney@gmail.com "
+              onClick={() => {
+                window.location.href = `mailto:${EMAIL}?subject=${SUBJECT}&body=${BODY}`;
+              }}
+            >
+              📧 Email me
+            </button>
+          </div>
         </div>
       </div>
     </SmoothInOut>

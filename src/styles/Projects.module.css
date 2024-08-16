@@ -18,11 +18,14 @@
   border-radius: 8px;
   gap: 10px;
   overflow-y: auto;
-  height: 38vh;
+  height: 40vh;
 }
 
 @media screen and (width < 650px) {
   .projectsList {
     grid-template-columns: repeat(auto-fill, minmax(10rem, 16rem));
+  }
+  .projectsList {
+    height: 70vh;
   }
 }

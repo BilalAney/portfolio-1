@@ -9,12 +9,14 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "firebase_login": "firebase login",
-    "firebase_hosting": "firebase init hosting"
+    "firebase_hosting": "firebase init hosting",
+    "firebase_deploy": "firebase deploy"
   },
   "dependencies": {
     "firebase": "^10.12.2",
     "firebase-tools": "^13.12.0",
     "framer-motion": "^11.2.12",
+    "portfolio": "file:",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.24.0"
